@@ -1,0 +1,89 @@
+body {
+
+    font-family: cursive;
+
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+textarea {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 600PX;
+}
+@keyframes tituloAnimado {
+    0% {color: rgb(252, 12, 92);}
+    25% {color: rgb(238, 118, 118);}
+    50% {color: rgb(2, 17, 2);}
+    75% {color: rgb(252, 171, 252);}
+    100% {color: rgb(154, 154, 252);}
+  }
+  
+  h1 {
+    text-align: center;
+    animation-name: tituloAnimado;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+  }
+  
+
+.register{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    height: auto;
+    margin-left: auto;
+    color: #500232;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:  #7d5c4fa2;
+    box-shadow: 14px black;
+    border-radius: 6px;
+  
+}
+.register input{
+    background-color: grey;
+}
+button{
+    background-color: rgb(112, 61, 61);
+    width: 100px;
+    height: 40px;
+    transition: scale(2);
+    border-radius: 5px;
+}
+button:hover{
+    background-color: #ccc;
+}
+
+.imge{
+    display: flex;
+    justify-content: center;
+}
+
+
+h2{
+    text-align: center;
+}
+.texto{
+    color: rgb(172, 161, 233);
+}
+input{
+    background-color: rgb(119, 111, 111);
+}
+textarea{
+    background-color: grey;
+}

@@ -1,0 +1,173 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Estilos generales */
+  body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+  }
+  
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  .navbar {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+  }
+  
+  .navbar .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  
+  .navbar .logo {
+    font-size: 1.5rem;
+  }
+  
+  .navbar .nav-links a {
+    color: #fff;
+    text-decoration: none;
+    margin-left: 20px;
+  }
+  
+  .navbar .nav-links a:hover {
+    text-decoration: underline;
+  }
+  
+  .admin-section {
+    background-color: #fff;
+    margin-top: 20px;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    margin-bottom: 20px;
+  }
+  
+  /* Estilos para grids */
+  .productos-grid,
+  .empleados-grid,
+  .ordenes-grid,
+  .clientes-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  /* Estilos específicos para elementos individuales */
+  .producto,
+  .empleado,
+  .orden,
+  .cliente {
+    background-color: #f9f9f9;
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  
+  .producto h3,
+  .empleado h3,
+  .orden h3,
+  .cliente h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+  }
+  
+  .producto p,
+  .empleado p,
+  .orden p,
+  .cliente p {
+    color: #666;
+    margin-bottom: 5px;
+  }
+  
+  .producto-actions,
+  .empleado-actions,
+  .orden-actions,
+  .cliente-actions {
+    margin-top: 10px;
+  }
+  
+  .producto-actions button,
+  .empleado-actions button,
+  .orden-actions button,
+  .cliente-actions button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 5px 10px;
+    margin-right: 5px;
+    cursor: pointer;
+  }
+  
+  .producto-actions button:hover,
+  .empleado-actions button:hover,
+  .orden-actions button:hover,
+  .cliente-actions button:hover {
+    background-color: #555;
+  }
+  
+  .footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  .footer p {
+    margin: 0;
+  }
+  
+  /* Estilos para modales */
+  .modal {
+    display: none; /* Ocultar modal por defecto */
+    position: fixed;
+    z-index: 1000;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    position: relative;
+  }
+  
+  .close {
+    position: absolute;
+    top: 0;
+    right: 10px;
+    font-size: 30px;
+    cursor: pointer;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+  }
+  

@@ -1,0 +1,125 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    box-sizing: border-box;
+}
+
+
+.navbar {
+    background-color: #7d5c4f;
+    height: auto !important;
+}
+
+.navbar-brand{
+    margin-right: 65px !important;
+    margin-left: 20px !important;
+}
+
+.container-fluid {
+    background: linear-gradient(#d8a28a, #7d5c4f);
+    height: auto !important;
+
+}
+
+.logo {
+    height: 80px;
+    border-radius: 3px;
+    width: auto;
+}
+
+.navbar-nav .nav-link img {
+    height: 25px;
+    width: 25px;
+    margin-right: 9px;
+}
+
+.navbar-nav .nav-link {
+    display: flex;
+    align-items: center;
+}
+
+.google {
+    margin-left: auto;
+}
+
+.navbar-nav a{
+    font-size: 18px;
+    gap: 20px;
+}
+
+.logo {
+    width: 7.5rem;
+    display: flex;
+    border-radius: 50%;
+    border: 0.7rem solid #ffc2c3;
+    transition: 1.5s;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo:hover {
+    transform: scale(1.22);
+}
+
+
+
+.footer-container {
+    display: flex;
+    flex-direction: column;
+    padding: 4.5rem;
+    margin: auto;
+    background: linear-gradient(#ffc2c3, #c08f90);
+    opacity: 0.95;
+    box-shadow: 5px 5px 5px 5px rgba(101, 74, 62, 0.5);
+    text-align: center;
+    font-size: 2rem;
+}
+
+.footer-icons-container {
+    margin: auto;
+    border-radius: 0.5rem;
+    background-color: #a28c71;
+}
+
+.footer p {
+    padding: 6rem;
+}
+
+footer img {
+    width: 4rem;
+}
+
+.ws-icon {
+    margin-left: 0.5rem;
+}
+
+.hashtag {
+    color: #edaaac;
+}
+
+
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        justify-content: center;
+    }
+    .three-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+    
+}

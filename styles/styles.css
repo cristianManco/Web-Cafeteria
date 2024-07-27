@@ -1,0 +1,258 @@
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 16px;
+    font-family: 'Dancing Script', cursive;
+    box-sizing: border-box;
+}
+
+
+/* Estilos para las tarjetas */
+.card {
+    margin-bottom: 20px;
+    border: 1px solid #dee2e6;
+    border-radius: 10px;
+    transition: transform 0.3s;
+    height: auto;
+    width: 400px;
+}
+
+.card:hover {
+    transform: scale(1.05);
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-text {
+    margin-bottom: 0;
+}
+
+.card-img-top {
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    max-height: 200px; /* Ajustar según necesidad */
+    object-fit: cover;
+}
+
+.card-title {
+    color: #333;
+    font-weight: bold;
+}
+
+.hashtag {
+    color: #6C757D;
+}
+
+/* Estilos para el título */
+.divTitle {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.title-h1 {
+    font-size: 32px;
+    color: #333;
+}
+
+/* Estilos para la sección de tres tarjetas */
+.three-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+/* Estilos para la sección de la tarjeta grande */
+.tarjeta1 {
+    margin-bottom: 20px;
+}
+
+/* Estilos para dispositivos pequeños */
+@media (max-width: 767px) {
+    .navbar-nav {
+        text-align: center;
+    }
+
+    .navbar-nav .nav-item {
+        margin-bottom: 10px;
+    }
+
+    .navbar-nav .nav-link {
+        justify-content: center;
+    }
+    .three-cards-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card {
+        width: 100%;
+    }
+}
+
+.banner-contenedor{
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+}
+
+p{
+    font-size: 17px;
+}
+
+
+
+.wallpaper {
+    width: 100%;
+    height: auto;
+    background-image: url("/images/wallpaper01.jpg");
+    /* filter: brightness(0.5); */
+    background-size: cover;
+}
+
+
+.logo {
+    width: 7.5rem;
+    display: flex;
+    border-radius: 50%;
+    border: 0.7rem solid #ffc2c3;
+    transition: 1.5s;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.5);
+}
+
+.logo:hover {
+    transform: scale(1.22);
+}
+
+
+.cinta-img {
+    max-width: 97vw;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    box-shadow: 5px 5px 5px 5px rgba(101, 74, 62, 0.5);
+}
+
+.cinta-de-imagenes {
+    list-style: none;
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cinta-de-imagenes img {
+    display: flex;
+    max-width: 14%;
+    width: 50rem;
+}
+
+#cinta-img2 {
+    margin-top: 1rem;
+    max-width: 97vw;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.slider-container2 {
+    display: flex;
+    justify-content: center;
+    margin-top: 0;
+    width: 97vw;
+    height: 100vh;
+    overflow: hidden;
+    box-shadow: 5px 5px 5px 5px rgba(101, 74, 62, 0.5);
+}
+
+.slider-container2 ul {
+    display: flex;
+    animation: slide 14s infinite alternate linear;
+    width: 400%;
+}
+
+.slider-container2 img {
+    width: 97vw;
+    height: 100vh;
+}
+
+.cinta-de-imagenes img:hover {
+    transform: scale(1.5);
+    transition: 2s;
+    opacity: 1;
+}
+
+
+.tarjeta1 {
+    aspect-ratio: 17/8;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    margin-top: 0.5rem;
+    align-items: center;
+    align-content: center;
+    box-shadow: 5px 5px 5px 5px rgba(101, 74, 62, 0.5);
+}
+
+.tarjeta1:hover {
+    transform: scale(1.035);
+    transition: 2s;
+}
+
+.tarjeta1 img {
+    margin-left: 8rem;
+    margin-top: 0.4rem;
+    margin-bottom: 1rem;
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.tarjeta1 h1 {
+    background-color: #ab7963;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 2.8rem;
+    padding: 6rem;
+    opacity: 0.9;
+    margin: auto;
+}
+
+.tarjeta1 h1:hover {
+    opacity: 1;
+}
+
+@keyframes slide {
+    0% {
+        margin-left: 0%;
+    }
+    20% {
+        margin-left: 0%;
+    }
+    25% {
+        margin-left: -100%;
+    }
+    45% {
+        margin-left: -100%;
+    }
+    50% {
+        margin-left: -200%;
+    }
+    70% {
+        margin-left: -200%;
+    }
+    75% {
+        margin-left: -300%;
+    }
+    95% {
+        margin-left: -300%;
+    }
+}
+
+

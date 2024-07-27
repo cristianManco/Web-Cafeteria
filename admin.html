@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Admin Dashboard</title>
+  <link rel="stylesheet" href="./styles/admin.css">
+</head>
+<body>
+  <header class="navbar">
+    <div class="container">
+      <h1 class="logo">Admin Dashboard</h1>
+      <nav class="nav-links">
+        <a href="#productos">Productos</a>
+        <a href="#empleados">Empleados</a>
+        <a href="#ordenes">Órdenes</a>
+        <a href="#clientes">Clientes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section id="productos" class="admin-section">
+      <h2 class="section-title">Gestión de Productos</h2>
+      <div class="productos-grid" id="productos-grid">
+        <!-- Los productos se inyectarán aquí dinámicamente -->
+      </div>
+      <button id="agregar-producto-btn">Agregar Producto</button>
+    </section>
+
+    <section id="empleados" class="admin-section">
+      <h2 class="section-title">Gestión de Empleados</h2>
+      <div class="empleados-grid" id="empleados-grid">
+        <!-- Los empleados se inyectarán aquí dinámicamente -->
+      </div>
+      <button id="agregar-empleado-btn">Agregar Empleado</button>
+    </section>
+
+    <section id="ordenes" class="admin-section">
+      <h2 class="section-title">Gestión de Órdenes</h2>
+      <div class="ordenes-grid" id="ordenes-grid">
+        <!-- Las órdenes se inyectarán aquí dinámicamente -->
+      </div>
+      <button id="agregar-orden-btn">Agregar Orden</button>
+    </section>
+
+    <section id="clientes" class="admin-section">
+      <h2 class="section-title">Gestión de Clientes</h2>
+      <div class="clientes-grid" id="clientes-grid">
+        <!-- Los clientes se inyectarán aquí dinámicamente -->
+      </div>
+      <button id="agregar-cliente-btn">Agregar Cliente</button>
+    </section>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+
+    <!-- Modal para agregar/editar productos -->
+    <div id="modal-producto" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-titulo-producto">Agregar Producto</h2>
+        <form id="form-producto">
+          <input type="hidden" id="producto-id">
+          <label for="nombre">Nombre:</label>
+          <input type="text" id="nombre" required>
+          <label for="descripcion">Descripción:</label>
+          <textarea id="descripcion" required></textarea>
+          <label for="precio">Precio:</label>
+          <input type="number" id="precio" step="0.01" required>
+          <label for="multimedia_url">URL de la imagen:</label>
+          <input type="url" id="multimedia_url" required>
+          <label for="categoria">Categoría:</label>
+          <select id="categoria" required>
+            <!-- Las categorías se cargarán dinámicamente -->
+          </select>
+          <label for="stock">Stock:</label>
+          <input type="number" id="stock" required>
+          <button type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal para agregar/editar empleados -->
+    <div id="modal-empleado" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-titulo-empleado">Agregar Empleado</h2>
+        <form id="form-empleado">
+          <input type="hidden" id="empleado-id">
+          <label for="empleado-nombre">Nombre:</label>
+          <input type="text" id="empleado-nombre" required>
+          <label for="empleado-position">Cargo:</label>
+          <input type="text" id="empleado-position" required>
+          <button type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal para agregar/editar órdenes -->
+    <div id="modal-orden" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-titulo-orden">Agregar Orden</h2>
+        <form id="form-orden">
+          <input type="hidden" id="orden-id">
+          <label for="orden-total">Total:</label>
+          <input type="number" id="orden-total" step="0.01" required>
+          <button type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Modal para agregar/editar clientes -->
+    <div id="modal-cliente" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <h2 id="modal-titulo-cliente">Agregar Cliente</h2>
+        <form id="form-cliente">
+          <input type="hidden" id="cliente-id">
+          <label for="cliente-nombre">Nombre:</label>
+          <input type="text" id="cliente-nombre" required>
+          <label for="cliente-email">Email:</label>
+          <input type="email" id="cliente-email" required>
+          <button type="submit">Guardar</button>
+        </form>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2024 Admin Dashboard. Todos los derechos reservados.</p>
+    </div>
+  </footer>
+
+  <script src="./script/admin.js"></script>
+</body>
+</html>
