@@ -19,7 +19,7 @@
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="/images/logo.jpg"
+            <a class="navbar-brand" href="./index.html"><img class="logo" src="./images/logo.jpg"
                     alt="logo del café del vivero"></a>
             <br>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -30,31 +30,41 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/productos1.html"><img src="/images/products-icon.png"
+                        <a class="nav-link" href="./productos1.html"><img src="./images/products-icon.png"
                                 alt="products-icon">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html"><img src="/images/menu-icon.png" alt="menu-icon">Menú</a>
+                        <a class="nav-link" href="./menu.html"><img src="./images/menu-icon.png" alt="menu-icon">Menú</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="eventos.html"><img src="/images/events-icon.png"
+                        <a class="nav-link" href="./eventos.html"><img src="./images/events-icon.png"
                                 alt="events-icon">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html"><img src="/images/location-icon.png"
+                        <a class="nav-link" href="./contacto.html"><img src="./images/location-icon.png"
                                 alt="location-icon">Ubicación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="prueba.html"><img src="/images/location-icon.png"
+                        <a class="nav-link" href="./prueba.html"><img src="./images/location-icon.png"
                                 alt="location-icon">Quienes somos?</a>
                     </li>
-
                 </ul>
-                
-                <div id="google_translate_element" class="google"></div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" id="loginItem">
+                        <a class="nav-link" href="./Auth/login.html">Login</a>
+                    </li>
+                    <li class="nav-item" id="registerItem">
+                        <a class="nav-link" href="./Auth/register.html">Register</a>
+                    </li>
+                    <li class="nav-item" id="logoutItem" style="display: none;">
+                        <a class="nav-link" href="#" id="logoutLink">Logout</a>
+                    </li>
+                </ul>
+                <br>
+                <div id="google_translate_element" class="google" style="width: min-content;"></div>
             </div>
         </div>
     </nav>

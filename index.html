@@ -8,9 +8,11 @@
     <link rel="stylesheet" href="./styles/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=Outfit:wght@800&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=Outfit:wght@800&family=Raleway:wght@700;800&display=swap"
+        rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/nav-footer.css">
 </head>
 
@@ -18,7 +20,7 @@
     <!-- INICIO DEL ENCABEZADO DE LA PÁGINA -->
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="/images/logo.jpg"
+            <a class="navbar-brand" href="./index.html"><img class="logo" src="./images/logo.jpg"
                     alt="logo del café del vivero"></a>
             <br>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -29,31 +31,41 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/productos1.html"><img src="/images/products-icon.png"
+                        <a class="nav-link" href="./productos1.html"><img src="./images/products-icon.png"
                                 alt="products-icon">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html"><img src="/images/menu-icon.png" alt="menu-icon">Menú</a>
+                        <a class="nav-link" href="./menu.html"><img src="./images/menu-icon.png" alt="menu-icon">Menú</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="eventos.html"><img src="/images/events-icon.png"
+                        <a class="nav-link" href="./eventos.html"><img src="./images/events-icon.png"
                                 alt="events-icon">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html"><img src="/images/location-icon.png"
+                        <a class="nav-link" href="./contacto.html"><img src="./images/location-icon.png"
                                 alt="location-icon">Ubicación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="prueba.html"><img src="/images/location-icon.png"
+                        <a class="nav-link" href="./prueba.html"><img src="./images/location-icon.png"
                                 alt="location-icon">Quienes somos?</a>
                     </li>
-
                 </ul>
-                
-                <div id="google_translate_element" class="google"></div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" id="loginItem">
+                        <a class="nav-link" href="./Auth/login.html">Login</a>
+                    </li>
+                    <li class="nav-item" id="registerItem">
+                        <a class="nav-link" href="./Auth/register.html">Register</a>
+                    </li>
+                    <li class="nav-item" id="logoutItem" style="display: none;">
+                        <a class="nav-link" href="#" id="logoutLink">Logout</a>
+                    </li>
+                </ul>
+                <br>
+                <div id="google_translate_element" class="google" style="width: min-content;"></div>
             </div>
         </div>
     </nav>
@@ -69,6 +81,9 @@
             }, 'google_translate_element');
         }
     </script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="../scripts/auth-guard.js"></script>
+
 
     <br>
     <br>
@@ -78,20 +93,87 @@
     </div>
 
     <section class="three-cards-container">
-        <!-- Aquí se insertarán las tarjetas dinámicamente -->
+        <!-- Tarjeta 1 -->
+        <div class="card">
+            <img src="/images/slider7.jpg" class="card-img-top" alt="Imagen Tarjeta 1">
+            <div class="card-body">
+                <h3 class="card-title">Nuestra historia familiar</h3>
+                <p class="card-text">Somos un emprendimiento familiar👨‍👩‍👦‍👦, fundado por <a class="enfasis"
+                        target="_blank" href="https://www.instagram.com/lilo_cakes/">@lilo_cakes</a> y <a
+                        class="enfasis" target="_blank"
+                        href="https://www.instagram.com/daniel.bran.g/">@daniel.bran</a>.
+                    <img src="/images/icons8-natural-user-interface-2.gif" alt="">
+                </p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 2 -->
+        <div class="card">
+            <img src="/images/img-grid05.jpg" class="card-img-top" alt="Imagen Tarjeta 2">
+            <div class="card-body">
+                <h3 class="card-title">Exploración de sabores</h3>
+                <p class="card-text"><b>·</b> Descubre nuestros sabores en constante evolución <a
+                        style="text-decoration: none;" target="_blank" href="/productos1.html">😋</a>. ¡Te sorprenderán!
+                </p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 3 -->
+        <div class="card">
+            <img src="/images/slider4.jpg" class="card-img-top" alt="Imagen Tarjeta 3">
+            <div class="card-body">
+                <h3 class="card-title">Vinculados con la naturaleza</h3>
+                <p class="card-text"><b>·</b> Descubre cómo conectamos con la naturaleza en medio de la ciudad 🌿🏙️🌿
+                </p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 4 -->
+        <div class="card">
+            <img src="/images/products-coffee02.jpg" class="card-img-top" alt="Imagen Tarjeta 4">
+            <div class="card-body">
+                <h3 class="card-title">Paz y tranquilidad</h3>
+                <p class="card-text">Ven y disfruta de un espacio donde podrás encontrar paz y tranquilidad en medio de
+                    la ciudad.</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 5 -->
+        <div class="card">
+            <img src="/images/slider4.jpg" class="card-img-top" alt="Imagen Tarjeta 5">
+            <div class="card-body">
+                <h3 class="card-title">Amigable para todos</h3>
+                <p class="card-text">¡Somos un lugar perfecto para toda la familia! Ven con tus hijos, ¡somos
+                    #kidsfriendly👶! Y también ven con tus mascotas, ¡somos #petfriendly.🐶</p>
+            </div>
+        </div>
+
+        <!-- Tarjeta 6 -->
+        <div class="card">
+            <img src="/images/seamless-coffee-beans-pattern-beige-retro-background-brown-colors_656098-176.jpg"
+                class="card-img-top" alt="Imagen Tarjeta 6">
+            <div class="card-body">
+                <h3 class="card-title">Aceptamos a todos</h3>
+                <p class="card-text">Ven con tu familia y con tus amigos. ¡Aquí siempre serás bienvenido!</p>
+            </div>
+        </div>
     </section>
     <br>
     <br>
 
-    <!-- INICIO SECCIÓN: CINTA DE IMÁGENES 1 -->
     <section class="cinta-img">
         <div class="cinta-de-imagenes">
-            <!-- Aquí se insertarán las imágenes dinámicamente -->
+            <img src="images/slider1.jpg" alt="café01">
+            <img src="images/slider2.jpg" alt="café02">
+            <img src="images/slider3.jpg" alt="café03">
+            <img src="images/slider4.jpg" alt="café04">
+            <img src="images/slider5.jpg" alt="café05">
+            <img src="images/slider6.jpg" alt="café06">
+            <img src="images/slider7.jpg" alt="café07">
         </div>
     </section>
-    <!-- FINAL SECCIÓN: CINTA DE IMÁGENES 1 -->
     <br>
-    <!-- INICIO SECCIÓN: SLIDER / CARRUSEL -->
+
     <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
             <!-- Aquí se insertarán las imágenes dinámicamente -->
@@ -107,102 +189,52 @@
             <span class="visually-hidden">Next</span>
         </button>
     </div>
-    <!-- FINAL SECCIÓN: SLIDER / CARRUSEL  -->
-
-    <!-- INICIO SECCIÓN: CINTA DE IMÁGENES 2 -->
+    <br>
     <section class="cinta-img">
         <div class="cinta-de-imagenes" id="cinta-img2">
-            <!-- Aquí se insertarán las imágenes dinámicamente -->
+            <img src="images/slider1.jpg" alt="café01">
+            <img src="images/slider2.jpg" alt="café02">
+            <img src="images/slider3.jpg" alt="café03">
+            <img src="images/slider4.jpg" alt="café04">
+            <img src="images/slider5.jpg" alt="café05">
+            <img src="images/slider6.jpg" alt="café06">
+            <img src="images/slider7.jpg" alt="café07">
         </div>
     </section>
-    <!-- FINAL SECCIÓN: CINTA DE IMÁGENES 2 -->
 
-    <!-- INICIO SECCIÓN: Tarjeta 1 -->
-    <section class="tarjeta1">
-        <h1 class="title">Somos un espacio para <span class="hashtag">disfrutar</span> de la naturaleza. <br>Aquí podrás
-            tener un poco de <span class="hashtag"> tranquilidad</span> y silencio en medio de la ciudad.</h1>
+
+    <section class="tarjetas">
+        <div class="tarjeta">
+            <h1 class="title">Somos un espacio para <span class="hashtag">disfrutar</span> de la naturaleza. <br>Aquí
+                podrás tener un poco de <span class="hashtag">tranquilidad</span> y silencio en medio de la ciudad.</h1>
+        </div>
+        <div class="tarjeta">
+            <h1 class="title">
+                <a style="text-decoration: none; color:black;" target="_blank" href="/contacto.html">Ven con tu familia
+                    y con tus amigos. <br> Ven con tus hijos,<br> que somos <span class="hashtag">#kidsfriendly👶</span>
+                    <br>Ven con tu mascota, que somos <span class="hashtag">#petfriendly.🐶</span></a>
+            </h1>
+        </div>
     </section>
-    <!-- FINAL SECCIÓN: Tarjeta 1 -->
 
-    <div class="tarjeta1">
-        <h1 class="title"><a style="text-decoration: none; color:black;" target="_blank" href="/contacto.html">Ven con
-                tu familia y con tus amigos. <br> Ven con tus hijos,<br> que somos <span
-                    class="hashtag">#kidsfriendly👶</span> <br>Ven con tu mascota, que somos <span
-                    class="hashtag">#petfriendly.🐶</span></a></h1>
-        <!-- <video src="images/SaveInsta.App - 2893371287213034215.mp4" width="380" controls>
-            Lo sentimos. Este vídeo no puede ser reproducido en tu navegador.<br>
-            La versión descargable está disponible en <a href="URL">Enlace</a>.
-        </video> -->
-    </div>
-    <!-- inicio  del footer pagina principal -->
+
+
     <footer class="footer-container">
-        <p>Todos los derechos reservados.&copy; Coders | Grupo B1 | Cristian manco</p>
+        <p>Todos los derechos reservados.&copy; Coders | Grupo B1 |<a href="https://github.com/cristianManco">Cristian
+                manco</a> </p>
         <div class="footer-icons-container">
-            <a href="https://www.facebook.com/?locale=es_LA"><img src="/images/Facebook F.png" alt=""></a>
-            <a target="_blank" href="https://www.instagram.com/elcafedelvivero/"><img src="/images/Instagram.png" alt=""></a>
+            <a href="https://www.facebook.com/?camilocorrea"><img src="/images/Facebook F.png" alt=""></a>
+            <a target="_blank" href="https://www.instagram.com/elcafedelvivero/"><img src="/images/Instagram.png"
+                    alt=""></a>
             <a href="https://wa.me/3052859798"><img class="ws-icon" src="/images/WhatsApp.png" alt=""></a>
         </div>
     </footer>
 
-    <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-            const response = await fetch('https://coffeshop-backend.onrender.com/product/all');
-            const products = await response.json();
-
-            const threeCardsContainer = document.querySelector('.three-cards-container');
-            const cintaDeImagenes1 = document.querySelector('.cinta-de-imagenes');
-            const carouselInner = document.querySelector('.carousel-inner');
-            const cintaDeImagenes2 = document.querySelector('#cinta-img2');
-
-            // Agregar tarjetas
-            products.forEach(product => {
-                const card = `
-                    <div class="card">
-                        <img src="${product.multimedia_url}" class="card-img-top" alt="${product.name}">
-                        <div class="card-body">
-                            <h5 class="card-title">${product.name}</h5>
-                            <p class="card-text">${product.description}</p>
-                        </div>
-                    </div>
-                `;
-                threeCardsContainer.insertAdjacentHTML('beforeend', card);
-            });
-
-            // Agregar imágenes a la cinta 1
-            products.slice(0, 3).forEach(product => {
-                const img = `
-                    <div class="cinta-item">
-                        <img src="${product.multimedia_url}" alt="${product.name}">
-                    </div>
-                `;
-                cintaDeImagenes1.insertAdjacentHTML('beforeend', img);
-            });
-
-            // Agregar imágenes al carrusel
-            products.forEach((product, index) => {
-                const activeClass = index === 0 ? 'active' : '';
-                const carouselItem = `
-                    <div class="carousel-item ${activeClass}">
-                        <img src="${product.multimedia_url}" class="d-block w-100" alt="${product.name}">
-                    </div>
-                `;
-                carouselInner.insertAdjacentHTML('beforeend', carouselItem);
-            });
-
-            // Agregar imágenes a la cinta 2
-            products.slice(3, 6).forEach(product => {
-                const img = `
-                    <div class="cinta-item">
-                        <img src="${product.multimedia_url}" alt="${product.name}">
-                    </div>
-                `;
-                cintaDeImagenes2.insertAdjacentHTML('beforeend', img);
-            });
-        });
-    </script>
-     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-     integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-     </script>
+    <script src="./script/index.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
+        </script>
 </body>
+
 </html>

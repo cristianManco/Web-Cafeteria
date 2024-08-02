@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <title>&#127760; Iniciar sesión </title>
+    <link rel="stylesheet" href="../styles/loginStyle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=Outfit:wght@800&family=Raleway:wght@700;800&display=swap"
+        rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link rel="stylesheet" href="../styles/nav-footer.css">
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="../index.html"><img class="logo" src="../images/logo.jpg"
+                    alt="logo del café del vivero"></a>
+            <br>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="../index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../productos1.html"><img src="../images/products-icon.png"
+                                alt="products-icon">Productos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../menu.html"><img src="../images/menu-icon.png" alt="menu-icon">Menú</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../eventos.html"><img src="../images/events-icon.png"
+                                alt="events-icon">Eventos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../contacto.html"><img src="../images/location-icon.png"
+                                alt="location-icon">Ubicación</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="../prueba.html"><img src="../images/location-icon.png"
+                                alt="location-icon">Quienes somos?</a>
+                    </li>
+                </ul>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" id="loginItem">
+                        <a class="nav-link" href="./login.html">Login</a>
+                    </li>
+                    <li class="nav-item" id="registerItem">
+                        <a class="nav-link" href="./register.html">Register</a>
+                    </li>
+                    <li class="nav-item" id="logoutItem" style="display: none;">
+                        <a class="nav-link" href="#" id="logoutLink">Logout</a>
+                    </li>
+                </ul>
+                <br>
+                <div id="google_translate_element" class="google" style="width: min-content;"></div>
+            </div>
+        </div>
+    </nav>
+
+    <script src="https://translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
+    <script>
+        function googleTranslateElementInit() {
+            new google.translate.TranslateElement({
+                pageLanguage: 'es',
+                includedLanguages: 'ca,eu,gl,en,fr,it,pt,de,tr,hu,hi,ar,af,aa,ru,es',
+                layout: google.translate.TranslateElement.InlineLayout.SIMPLE,
+                gaTrack: true
+            }, 'google_translate_element');
+        }
+    </script>
+
+    <br>
+    <br>
+
+    <section style="height: auto;">
+        <div class="leaves">
+            <div class="set">
+                <div><img src="../img_login/leaf_01.png"></div>
+                <div><img src="../img_login/leaf_02.png"></div>
+                <div><img src="../img_login/leaf_03.png"></div>
+                <div><img src="../img_login/leaf_04.png"></div>
+                <div><img src="../img_login/leaf_01.png"></div>
+                <div><img src="../img_login/leaf_02.png"></div>
+                <div><img src="../img_login/leaf_03.png"></div>
+                <div><img src="../img_login/leaf_04.png"></div>
+            </div>
+        </div>
+        <br>
+
+        <img src="../img_login/bg.jpg" class="bg">
+        <img src="../img_login/girl.png" class="girl">
+        <img src="../img_login/trees.png" class="trees">
+        <div style="margin: auto;padding: 4rem;">
+            <form id="formLogin" class="login">
+                <h2>Iniciar sesión</h2>
+                <div class="inputBox">
+                    <label for="userEmail" class="form-label">Correo electrónico :</label>
+                    <input type="email" class="form-control" id="userEmail" required
+                        style="background-color: beige; color: black;">
+                </div>
+                <div class="inputBox">
+                    <label for="userPassword" class="form-label">Contraseña :</label>
+                    <input type="password" class="form-control" id="userPassword" required
+                        style="background-color: beige; color: black;">
+                </div>
+                <div class="col-12">
+                    <div class="form-check" style="text-align: center; display: flex; gap: 10px;">
+                        <input class="form-check-input" type="checkbox" id="gridCheck" required>
+                        <br>
+                        <label class="form-check-label" for="gridCheck" style="font-size: 20px;">
+                            Aceptar los términos y condiciones
+                        </label>
+                    </div>
+                    <div style="text-align: center;">
+                        <br>
+                        <condiciones class="text"
+                            style="text-align: center; font-size:larger; color: rgb(223, 228, 238);">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header">
+                                    <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree" aria-expanded="false"
+                                        aria-controls="collapseThree" style="color:darkblue; font-size: 15px;">
+                                        Ver términos y condiciones...
+                                    </button>
+                                </h2>
+                                <div id="collapseThree" class="accordion-collapse collapse"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's accordion body.</strong> It is hidden by
+                                        default, until the collapse plugin adds
+                                        the appropriate classes that we use to style each element. These classes control
+                                        the overall appearance, as well
+                                        as the showing and hiding via CSS transitions. You can modify any of this with
+                                        custom CSS or overriding our
+                                        default variables. It's also worth noting that just about any HTML can go within
+                                        the <code>.accordion-body</code>,
+                                        though the transition does limit overflow. <a href="#">leer mas</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </condiciones>
+                    </div>
+                </div>
+                <div class="inputBox" style="display:flex;justify-content:center;">
+                    <button type="submit" value="Login" class="btn btn-outline-danger"
+                        style="font-size: 20px; color: black;">Entrar</button>
+                </div>
+                <div class="group">
+                    <a href="#" type="button" style="font-size: 16px; padding-top: 10px;">Recuperar contraseña</a>
+                    <a href="./register.html" class="btn btn-outline-danger">Registrarse</a>
+                </div>
+            </form>
+        </div>
+    </section>
+
+    <hr style="padding:0% ;background-color:black; margin:0%;">
+    <footer class="footer-container">
+        <p>Todos los derechos reservados.&copy; Coders | Grupo B1 |<a href="https://github.com/cristianManco">Cristian
+                manco</a> </p>
+        <div class="footer-icons-container">
+            <a target="_blank" href="https://www.facebook.com/?camilocorrea"><img src="../images/Facebook F.png"
+                    alt=""></a>
+            <a target="_blank" href="https://www.instagram.com/elcafedelvivero/"><img src="../images/Instagram.png"
+                    alt=""></a>
+            <a target="_blank" href="https://wa.me/3052859798"><img class="ws-icon" src="../images/WhatsApp.png"
+                    alt=""></a>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jwt-decode@3.1.2/build/jwt-decode.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../script/login.js"></script>
+</body>
+
+</html>

@@ -6,21 +6,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>el cafe del vivero</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="stylesheet" href="styles/products-styles.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@700&family=Dancing+Script:wght@700&family=Outfit:wght@800&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
     <link rel="stylesheet" href="./styles/nav-footer.css">
+    <link rel="stylesheet" href="/styles/products-styles.css">
 </head>
 
 <body class="wallpaper">
 
     <nav class="navbar navbar-expand-lg">
         <div class="container-fluid">
-            <a class="navbar-brand" href="index.html"><img class="logo" src="/images/logo.jpg"
+            <a class="navbar-brand" href="./index.html"><img class="logo" src="./images/logo.jpg"
                     alt="logo del café del vivero"></a>
             <br>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -31,31 +29,41 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="productos1.html"><img src="/images/products-icon.png"
+                        <a class="nav-link" href="./productos1.html"><img src="./images/products-icon.png"
                                 alt="products-icon">Productos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="menu.html"><img src="/images/menu-icon.png" alt="menu-icon">Menú</a>
+                        <a class="nav-link" href="./menu.html"><img src="./images/menu-icon.png" alt="menu-icon">Menú</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="eventos.html"><img src="/images/events-icon.png"
+                        <a class="nav-link" href="./eventos.html"><img src="./images/events-icon.png"
                                 alt="events-icon">Eventos</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contacto.html"><img src="/images/location-icon.png"
+                        <a class="nav-link" href="./contacto.html"><img src="./images/location-icon.png"
                                 alt="location-icon">Ubicación</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="prueba.html"><img src="/images/location-icon.png"
+                        <a class="nav-link" href="./prueba.html"><img src="./images/location-icon.png"
                                 alt="location-icon">Quienes somos?</a>
                     </li>
-
                 </ul>
-               
-                <div id="google_translate_element" class="google"></div>
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item" id="loginItem">
+                        <a class="nav-link" href="./Auth/login.html">Login</a>
+                    </li>
+                    <li class="nav-item" id="registerItem">
+                        <a class="nav-link" href="./Auth/register.html">Register</a>
+                    </li>
+                    <li class="nav-item" id="logoutItem" style="display: none;">
+                        <a class="nav-link" href="#" id="logoutLink">Logout</a>
+                    </li>
+                </ul>
+                <br>
+                <div id="google_translate_element" class="google" style="width: min-content;"></div>
             </div>
         </div>
     </nav>
@@ -76,32 +84,28 @@
     <br>
 
     <section class="main">
-        <h2 style="text-align: center;">Repostería</h2>
+        <h1 style="text-align: center;">Repostería</h1>
         <section class="gallery" id="reposteria-gallery">
             <!-- Imágenes de repostería se inyectarán aquí -->
         </section>
 
-        <h2 style="text-align: center;">Panadería y pastelería</h2>
+        <h1 style="text-align: center;">Panadería y pastelería</h1>
         <section class="gallery" id="panaderia-gallery">
             <!-- Imágenes de panadería y pastelería se inyectarán aquí -->
         </section>
 
-        <h2 style="text-align: center;">Café & bebidas</h2>
+        <h1 style="text-align: center;">Café & bebidas</h1>
         <section class="gallery" id="cafe-gallery">
             <!-- Imágenes de café y bebidas se inyectarán aquí -->
         </section>
     </section>
 
-    <h2 style="text-align: center;">Más información sobre nuestros productos</h2>
+    <h1 style="text-align: center;">Más información sobre nuestros productos</h1>
 
     <section class="contenedor">
         <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="tarjetas" id="reposteria">
-                        <!-- Aquí se inyectarán las tarjetas -->
-                    </div>
-                </div>
+            <div class="row" id="reposteria">
+                <!-- Aquí se inyectarán las tarjetas -->
             </div>
         </div>
 
@@ -112,16 +116,15 @@
                         <h5 class="modal-title" id="exampleModalLabel">Detalles del Producto</h5>
                         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                     </div>
-                    <div class="modal-body">
-                        <table class="table">
-                            <tbody id="modalBody">
-                                <!-- Aquí se mostrarán los detalles del producto -->
-                            </tbody>
-                        </table>
+                    <div class="modal-body" id="modalBody">
+                        <!-- Aquí se mostrará la tarjeta del producto -->
                     </div>
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
-                        <button type="button" class="btn btn-primary">Ir a comprar</button>
+                        <img src="./images/cristianQR.jpg" id="qr" width="50%" height="auto" alt="QR">
+                        <br>
+                        <form id="buy-form">
+                            <!-- Aquí se mostrará el formulario de compra -->
+                        </form>
                     </div>
                 </div>
             </div>
@@ -129,7 +132,7 @@
     </section>
 
     <footer class="footer-container">
-        <p>Todos los derechos reservados.&copy; Coders | Grupo B1 | Cristian manco</p>
+        <p>Todos los derechos reservados.&copy; Coders | Grupo B1 |<a href="https://github.com/cristianManco">Cristian manco</a> </p>
         <div class="footer-icons-container">
             <a href="https://www.facebook.com/?locale=es_LA"><img src="/images/Facebook F.png" alt=""></a>
             <a target="_blank" href="https://www.instagram.com/elcafedelvivero/"><img src="/images/Instagram.png" alt=""></a>
@@ -138,10 +141,9 @@
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
-    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous">
-    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
     <script src="./script/products.js"></script>
+    <script src="./script/guard.js"></script>
 
 </body>
 
