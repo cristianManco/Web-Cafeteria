@@ -23,11 +23,12 @@ document.addEventListener("DOMContentLoaded", function() {
         if (!token) {
           throw new Error("Token not provided");
         }
-
+        
+        const payload = await jwt_decode(token);
+        console.log(`Access token: ${payload}`);
+        localStorage.setItem("token", token);
         try {
-          const payload = jwt_decode(token);
 
-          localStorage.setItem("token", token);
 
           switch (payload.role) {
             case "admin":
